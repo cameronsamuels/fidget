@@ -1,0 +1,129 @@
+<!DOCTYPE html><html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+<title>Fidget Spinner</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="apple-touch-icon" href="app.png" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="description" content="The best fidget spinner app made! A pre-release though!" />
+        <meta property="og:url" content="http://cameronsamuels.com" />
+        <meta property="og:title" content="Fidget Spinner" />
+        <meta property="og:description" content="The best fidget spinner app made! A pre-release though!" />
+        <meta property="og:image" content="icon.png" />
+<script>
+function id(e) { return document.getElementById(e) }
+var movement = 0, spinner = { el: null, controller: null, angle: 0, startAngle: 0, originX: 160, originY: 160,
+
+handleEvent: function (e) {
+if (e.type == 'touchstart') this.rotateStart(e);
+else if (e.type == 'touchmove') this.rotateMove(e);
+else if (e.type == 'touchend') this.rotateStop(e);
+},
+
+init: function() {
+this.el = id('spinner');
+this.controller = id('display1');
+this.el.style.webkitTransitionDuration = '0';
+this.controller.addEventListener('touchstart', this, false);
+},
+
+rotateStart: function(e) {
+e.preventDefault();
+setTimeout(function(){movement = 0}, 2000);
+this.el.style.webkitTransitionDuration = '0';
+var startX = e.touches[0].pageX - this.originX;
+var startY = e.touches[0].pageY - this.originY;
+this.startAngle = Math.atan2(startY, startX) - this.angle;
+this.controller.addEventListener('touchmove', this, false);
+this.controller.addEventListener('touchend', this, false);
+movement = 0;
+},
+
+rotateMove: function(e) {
+var dx = e.touches[0].pageX - this.originX;
+var dy = e.touches[0].pageY - this.originY;
+this.angle = Math.atan2(dy, dx) - this.startAngle;
+this.el.style.webkitTransform = 'rotate(' + this.angle + 'rad)';
+movement = parseFloat(movement) + 0.02;
+},
+
+rotateStop: function(e) {
+this.controller.removeEventListener('touchmove', this, false);
+this.controller.removeEventListener('touchend', this, false);
+this.angle = movement * 1000;
+
+if (movement < 0.25) this.el.style.webkitTransitionDuration = '2000ms';
+else if (movement < 0.5) this.el.style.webkitTransitionDuration = '3000ms';
+else if (movement < 1) this.el.style.webkitTransitionDuration = '6000ms';
+else if (movement < 2) this.el.style.webkitTransitionDuration = '16000ms';
+else if (movement < 3) this.el.style.webkitTransitionDuration = '25000ms';
+else if (movement < 5) this.el.style.webkitTransitionDuration = '32000ms';
+else if (movement >= 5) this.el.style.webkitTransitionDuration = '60000ms';
+
+this.el.style.webkitTransform = 'rotate(' + this.angle + 'rad)';
+movement = 0;
+}};
+
+function loaded() { spinner.init() }
+
+
+
+
+window.addEventListener("load", function() {
+    localStorage.spinner = localStorage.spinner || 1;
+    id('spinner').style.backgroundImage = 'url(' + localStorage.spinner + '.png)';
+    var eles = document.querySelectorAll('header div');
+    for (i = 0; i < eles.length; i++) {
+        eles[i].style.backgroundImage = 'url(' + (i+1) + '.png)';
+        eles[i].id = i + 1;
+        eles[i].ontouchend = function(e){localStorage.spinner = e.target.id;id('spinner').style.backgroundImage = 'url(' + localStorage.spinner + '.png)'};
+    }
+    setTimeout(loaded, 100)
+}, true);
+    var x = 0;
+    setInterval(function(){
+        x+=1;
+        document.body.style.backgroundPosition = '0 ' + x + 'px';
+    }, 10);
+</script>
+
+<style>
+
+body, ul { padding:0; margin:0; }
+
+body { background:url(bg.jpg);
+background-color: white;overflow:hidden;}
+
+#wheel { position:absolute; z-index:1; width:100%; height:100%; overflow:hidden; }
+
+#display1 { position:absolute; z-index:100; background:transparent; }
+
+ul { background-repeat: no-repeat;background-position:center;background-size:contain;position:absolute; z-index:10; 	transition-timing-function:ease-out;
+    transition-property:transform;
+}
+ul,#display1 { margin: auto;left:0;right:0;top:0;bottom:0; }
+header {background-color:#3f51B5;width:100%;height:50px;box-shadow:0px 0px 4.52px rgba(0,0,0,1);}
+header div { margin-top:2.5px;float: left;background-repeat:no-repeat;background-size:cover;background-position:center;width:50px;height:50px; }
+
+@media screen and (orientation:portrait) {
+	ul{ width:95%; height:95vw }
+            #display1 { width:95%; height:95vw; }
+}
+@media screen and (orientation:landscape) {
+	ul{ height: 80%; width: 80vh; }
+    #display1 { width:80vh; height:80%; }
+}
+
+</style>
+
+</head>
+<body>
+<header>
+    <div></div><div></div><div></div><div></div>
+</header>
+<div id="wheel">
+<div id="display1"></div>
+<ul id="spinner"></ul>
+</div>
+</body></html>
