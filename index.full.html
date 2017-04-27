@@ -14,12 +14,21 @@
         <meta name="apple-itunes-app" content="app-id=1222698762">
 <script>
 function id(e) { return document.getElementById(e) }
-var movement = 0, spinner = { el: null, controller: null, angle: 0, startAngle: 0, originX: 160, originY: 160,
+var movement = 0, mousedown = 'false', spinner = { el: null, controller: null, angle: 0, startAngle: 0, originX: 160, originY: 160,
 
 handleEvent: function (e) {
 if (e.type == 'touchstart') this.rotateStart(e);
 else if (e.type == 'touchmove') this.rotateMove(e);
 else if (e.type == 'touchend') this.rotateStop(e);
+else if (e.type == 'mousedown') {
+    mousedown = 'true';
+    this.rotateStart(e);
+}
+else if (e.type == 'mousemove' && mousedown == 'true') this.rotateMove(e);
+else if (e.type == 'mouseup') {
+    mousedown = 'false';
+    this.rotateStop(e);
+}
 },
 
 init: function() {
@@ -31,6 +40,11 @@ this.el.style.webkitTransitionDuration = '0';
 this.controller.addEventListener('touchstart', this, false);
 this.controller.addEventListener('touchmove', this, false);
 this.controller.addEventListener('touchend', this, false);
+if (!navigator.userAgent.match(/iPhone|iPad|iPod/i) && !navigator.userAgent.match(/Android/i)) {
+this.controller.addEventListener('mousedown', this, false);
+this.controller.addEventListener('mousemove', this, false);
+this.controller.addEventListener('mouseup', this, false);
+}
 },
 
 rotateStart: function(e) {
@@ -40,8 +54,14 @@ this.originY =window.innerHeight/2;
 setTimeout(function(){movement = 0}, 2000);
 this.el.style.webkitTransitionDuration = '0ms';
 this.el.style.webkitTransform = '';
-var startX = e.touches[0].pageX - this.originX;
-var startY = e.touches[0].pageY - this.originY;
+if (e.touches) {
+    var startX = e.touches[0].pageX - this.originX;
+    var startY = e.touches[0].pageY - this.originY;
+} else {
+    var startX = e.clientX - this.originX;
+    var startY = e.clientY - this.originY;
+}
+
 this.startAngle = Math.atan2(startY, startX) - this.angle;
 movement = 0;
 },
@@ -49,8 +69,13 @@ movement = 0;
 rotateMove: function(e) {
 this.originX = window.innerWidth/2;
 this.originY =window.innerHeight/2;
-var dx = e.touches[0].pageX - this.originX;
-var dy = e.touches[0].pageY - this.originY;
+if (e.touches) {
+    var dx = e.touches[0].pageX - this.originX;
+    var dy = e.touches[0].pageY - this.originY;
+} else {
+    var dx = e.clientX - this.originX;
+    var dy = e.clientY - this.originY;
+}
 this.angle = Math.atan2(dy, dx) - this.startAngle;
 this.el.style.webkitTransform = 'rotate(' + this.angle + 'rad)';
 movement = parseFloat(movement) + 0.02;
@@ -81,6 +106,7 @@ window.addEventListener("load", function() {
         eles[i].style.backgroundImage = 'url(' + (i+1) + '.png)';
         eles[i].id = i + 1;
         eles[i].ontouchend = function(e){localStorage.spinner = e.target.id;id('spinner').style.backgroundImage = 'url(' + localStorage.spinner + '.png)'};
+        eles[i].onmouseup = eles[i].ontouchend;
     }
     document.body.addEventListener('touchmove', function(e){e.preventDefault()});
         if (window.navigator.standalone) {
@@ -102,15 +128,15 @@ body, ul { padding:0; margin:0 }
 body { background:url(bg.jpg);
 background-color: white;overflow:hidden;-webkit-user-select:none}
 
-#wheel { position:absolute; z-index:1; width:100%; height:100%; overflow:hidden; }
+#wheel { position:absolute; width:100%; height:100%; overflow:hidden; }
 
 /*#display1 { position:absolute; z-index:100; background:transparent; }*/
 
-ul { background-repeat: no-repeat;background-position:center;background-size:contain;position:absolute; z-index:10; 	transition-timing-function:ease-out;
+ul { background-repeat: no-repeat;background-position:center;background-size:contain;position:absolute; 	transition-timing-function:ease-out;
     transition-property:transform;
 }
 ul/*,#display1*/ { margin:auto;left:0;right:0;top:50px;bottom:0; }
-header {background-color:#3f51B5;width:100%;height:50px;box-shadow:0px 0px 4.52px rgba(0,0,0,1);position:fixed;}
+header {z-index:5;background-color:#3f51B5;width:100%;height:50px;box-shadow:0px 0px 4.52px rgba(0,0,0,1);position:fixed;}
 header div { margin-top:2.5px;float: left;background-repeat:no-repeat;background-size:cover;background-position:center;width:50px;height:50px; }
 
 @media screen and (orientation:portrait) {
