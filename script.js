@@ -38,13 +38,8 @@ originY =innerHeight/2;
 setTimeout(function(){movement = 0}, 2000);
 el.style.transitionDuration = '0ms';
 el.style.transform = '';
-if (e.touches) {
-    var startX = e.touches[0].pageX - originX;
-    var startY = e.touches[0].pageY - originY;
-} else {
-    var startX = e.clientX - originX;
-    var startY = e.clientY - originY;
-}
+if (e.touches) var startX = e.touches[0].pageX - originX, startY = e.touches[0].pageY - originY;
+else var startX = e.clientX - originX, startY = e.clientY - originY;
 
 startAngle = Math.atan2(startY, startX) - angle;
 movement = 0;
@@ -53,13 +48,8 @@ movement = 0;
 rotateMove: function(e) {
 originX = innerWidth/2;
 originY =innerHeight/2;
-if (e.touches) {
-    var dx = e.touches[0].pageX - originX;
-    var dy = e.touches[0].pageY - originY;
-} else {
-    var dx = e.clientX - originX;
-    var dy = e.clientY - originY;
-}
+if (e.touches) var dx = e.touches[0].pageX - originX, dy = e.touches[0].pageY - originY;
+else var dx = e.clientX - originX, dy = e.clientY - originY;
 angle = Math.atan2(dy, dx) - startAngle;
 el.style.transform = 'rotate(' + angle + 'rad)';
 movement = parseFloat(movement) + 0.02;
