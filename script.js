@@ -1,5 +1,5 @@
 function a(e) { return document.querySelector(e) }
-var movement = 0, mousedown = 'false', el = a('ul'), controller = el, angle = 0, startAngle = 0, originX = 160, originY = 160, spinner = {
+var movement = 0, mousedown = 'false', el = a('ul'), angle = 0, startAngle = 0, originX = 160, originY = 160, spinner = {
 
 handleEvent: function (e) {
 if (e.type == 'touchstart') this.rotateStart(e);
@@ -21,9 +21,9 @@ init: function() {
 originX = window.innerWidth/2;
 originY =window.innerHeight/2;
 el.style.transitionDuration = '0';
-controller.addEventListener('touchstart', this, false);
-controller.addEventListener('touchmove', this, false);
-controller.addEventListener('touchend', this, false);
+el.addEventListener('touchstart', this, false);
+el.addEventListener('touchmove', this, false);
+el.addEventListener('touchend', this, false);
 if (!navigator.userAgent.match(/iPhone|iPad|iPod/i) && !navigator.userAgent.match(/Android/i)) {
 document.body.addEventListener('mousedown', this, false);
 document.body.addEventListener('mousemove', this, false);
