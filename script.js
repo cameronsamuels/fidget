@@ -18,8 +18,8 @@ else if (e.type == 'mouseup') {
 
 init: function() {
 
-originX = window.innerWidth/2;
-originY =window.innerHeight/2;
+originX = innerWidth/2;
+originY =innerHeight/2;
 el.style.transitionDuration = '0';
 el.addEventListener('touchstart', this, false);
 el.addEventListener('touchmove', this, false);
@@ -33,8 +33,8 @@ document.addEventListener('mouseup', this, false);
 
 rotateStart: function(e) {
 e.preventDefault();
-originX = window.innerWidth/2;
-originY =window.innerHeight/2;
+originX = innerWidth/2;
+originY =innerHeight/2;
 setTimeout(function(){movement = 0}, 2000);
 el.style.transitionDuration = '0ms';
 el.style.transform = '';
@@ -51,8 +51,8 @@ movement = 0;
 },
 
 rotateMove: function(e) {
-originX = window.innerWidth/2;
-originY =window.innerHeight/2;
+originX = innerWidth/2;
+originY =innerHeight/2;
 if (e.touches) {
     var dx = e.touches[0].pageX - originX;
     var dy = e.touches[0].pageY - originY;
@@ -78,7 +78,7 @@ movement = 0;
 
 function loaded() { spinner.init() }
 
-window.addEventListener("load", function() {
+addEventListener("load", function() {
     localStorage.spinner = localStorage.spinner || 1;
     el.style.backgroundImage = 'url(img/' + localStorage.spinner + '.png)';
     var eles = document.querySelectorAll('header div');
@@ -89,7 +89,7 @@ window.addEventListener("load", function() {
         eles[i].onmouseup = eles[i].ontouchend;
     }
     document.addEventListener('touchmove', function(e){e.preventDefault()});
-    if (window.navigator.standalone) document.querySelector('header').style.paddingTop = "15px";
+    if (navigator.standalone) document.querySelector('header').style.paddingTop = "15px";
     setTimeout(loaded, 100)
 }, true);
 var x = 0;
