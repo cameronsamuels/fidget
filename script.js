@@ -25,9 +25,9 @@ el.addEventListener('touchstart', this, false);
 el.addEventListener('touchmove', this, false);
 el.addEventListener('touchend', this, false);
 if (!navigator.userAgent.match(/iPhone|iPad|iPod/i) && !navigator.userAgent.match(/Android/i)) {
-document.body.addEventListener('mousedown', this, false);
-document.body.addEventListener('mousemove', this, false);
-document.body.addEventListener('mouseup', this, false);
+document.addEventListener('mousedown', this, false);
+document.addEventListener('mousemove', this, false);
+document.addEventListener('mouseup', this, false);
 }
 },
 
@@ -88,7 +88,7 @@ window.addEventListener("load", function() {
         eles[i].ontouchend = function(e){localStorage.spinner = e.target.id;el.style.backgroundImage = 'url(img/' + localStorage.spinner + '.png)'};
         eles[i].onmouseup = eles[i].ontouchend;
     }
-    document.body.addEventListener('touchmove', function(e){e.preventDefault()});
+    document.addEventListener('touchmove', function(e){e.preventDefault()});
     if (window.navigator.standalone) document.querySelector('header').style.paddingTop = "15px";
     setTimeout(loaded, 100)
 }, true);
