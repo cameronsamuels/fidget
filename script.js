@@ -1,6 +1,4 @@
-function a(e) {
-  return document.querySelector(e)
-}
+function a(e) { return document.querySelector(e) }
 var movement = 0,
   mousedown = 'false',
   el = a('ul'),
@@ -80,9 +78,7 @@ var movement = 0,
     }
   };
 
-function loaded() {
-  spinner.init()
-}
+function loaded() { spinner.init() }
 
 addEventListener("load", function() {
   localStorage.spinner = localStorage.spinner || 1;
