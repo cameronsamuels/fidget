@@ -31,9 +31,7 @@ var movement = 0, mousedown = 'false', el = a('ul'), angle = 0, startAngle = 0, 
       e.preventDefault();
       originX = innerWidth / 2;
       originY = innerHeight / 2;
-      setTimeout(function() {
-        movement = 0
-      }, 2000);
+      setTimeout(function() { movement = 0 }, 2000);
       el.style.transitionDuration = '0ms';
       el.style.transform = '';
       if (e.touches) var startX = e.touches[0].pageX - originX,
