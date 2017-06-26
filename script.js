@@ -7,7 +7,6 @@ var movement = 0,
   originX = 160,
   originY = 160,
   spinner = {
-
     handleEvent: function(e) {
       if (e.type == 'touchstart') this.rotateStart(e);
       else if (e.type == 'touchmove') this.rotateMove(e);
@@ -21,9 +20,7 @@ var movement = 0,
         this.rotateStop(e);
       }
     },
-
     init: function() {
-
       originX = innerWidth / 2;
       originY = innerHeight / 2;
       el.style.transitionDuration = '0';
@@ -36,7 +33,6 @@ var movement = 0,
         document.addEventListener('mouseup', this, false);
       }
     },
-
     rotateStart: function(e) {
       e.preventDefault();
       originX = innerWidth / 2;
@@ -54,7 +50,6 @@ var movement = 0,
       startAngle = Math.atan2(startY, startX) - angle;
       movement = 0;
     },
-
     rotateMove: function(e) {
       originX = innerWidth / 2;
       originY = innerHeight / 2;
@@ -66,7 +61,6 @@ var movement = 0,
       el.style.transform = 'rotate(' + angle + 'rad)';
       movement = parseFloat(movement) + 0.02;
     },
-
     rotateStop: function(e) {
       angle = movement * 1000;
       if (movement < 0.5) {
@@ -77,9 +71,7 @@ var movement = 0,
       movement = 0;
     }
   };
-
 function loaded() { spinner.init() }
-
 addEventListener("load", function() {
   localStorage.spinner = localStorage.spinner || 1;
   el.style.backgroundImage = 'url(img/' + localStorage.spinner + '.png)';
