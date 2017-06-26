@@ -1,4 +1,9 @@
 compress_html:
   clippings: all
-  comments:  ["<!-- ", " -->"]
-  endings:   all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: true
+  startings: [html, head, body]
