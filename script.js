@@ -85,9 +85,7 @@ addEventListener("load", function() {
     };
     eles[i].onmouseup = eles[i].ontouchend;
   }
-  document.addEventListener('touchmove', function(e) {
-    e.preventDefault()
-  });
+  document.addEventListener('touchmove', function(e) { e.preventDefault() });
   if (navigator.standalone) document.querySelector('header').style.paddingTop = "15px";
   setTimeout(loaded, 100)
 }, true);
