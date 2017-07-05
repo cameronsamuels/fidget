@@ -2,16 +2,15 @@ function a(e) { return document.querySelector(e) }
 var movement = 0, mousedown = false, el = a('img'), angle = 0, startAngle = 0, originX = 160, originY = 160,
   spinner = {
     init: function() {
-      originX = innerWidth / 2;
-      originY = innerHeight / 2;
+      originX = innerWidth / 2, originY = innerHeight / 2;
       el.style.transitionDuration = '0';
-      el.addEventListener('touchstart', this.rotateStart, false);
-      el.addEventListener('touchmove', this.rotateMove, false);
-      el.addEventListener('touchend', this.rotateStop, false);
+      el.addEventListener('touchstart', this.rotateStart);
+      el.addEventListener('touchmove', this.rotateMove);
+      el.addEventListener('touchend', this.rotateStop);
       if (!navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) {
-        document.addEventListener('mousedown', this.rotateStart, false);
-        document.addEventListener('mousemove', this.rotateMove, false);
-        document.addEventListener('mouseup', this.rotateStop, false);
+        document.addEventListener('mousedown', this.rotateStart);
+        document.addEventListener('mousemove', this.rotateMove);
+        document.addEventListener('mouseup', this.rotateStop);
       }
     },
     rotateStart: function(e) {
