@@ -13,7 +13,7 @@ var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, orig
       e.preventDefault();
       elapse = new Date(), mousedown = true, movement = 0, originX = innerWidth / 2, originY = innerHeight / 2;
       el.style.transitionDuration = '', el.style.transform = '';
-      // setTimeout(function(){movement=0},2000);
+      setTimeout(function(){movement=0},50);
       if (e.touches) var startX = e.touches[0].pageX - originX, startY = e.touches[0].pageY - originY;
       else var startX = e.clientX - originX, startY = e.clientY - originY;
       startAngle = Math.atan2(startY, startX) - angle;
@@ -59,3 +59,4 @@ setInterval(function() {
   x += 3;
   document.body.style.backgroundPosition = '0 ' + x + 'px';
 }, 100);
+setInterval(function(){movement=0},1000), setInterval(function(){elapse=new Date()},3000);
