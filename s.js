@@ -1,5 +1,5 @@
 function a(e) { return document.querySelector(e) }
-var movement = 0, mousedown = 'false', el = a('body>img'), angle = 0, startAngle = 0, originX = 160, originY = 160,
+var movement = 0, mousedown = 'false', el = a('img'), angle = 0, startAngle = 0, originX = 160, originY = 160,
   spinner = {
     handleEvent: function(e) {
       if (e.type == 'touchstart') this.rotateStart(e);
