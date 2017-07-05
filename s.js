@@ -1,5 +1,5 @@
 function a(e) { return document.querySelector(e) }
-var movement = 0, mousedown = 'false', el = a('ul'), angle = 0, startAngle = 0, originX = 160, originY = 160,
+var movement = 0, mousedown = 'false', el = a('body>img'), angle = 0, startAngle = 0, originX = 160, originY = 160,
   spinner = {
     handleEvent: function(e) {
       if (e.type == 'touchstart') this.rotateStart(e);
@@ -66,14 +66,14 @@ var movement = 0, mousedown = 'false', el = a('ul'), angle = 0, startAngle = 0, 
 function loaded() { spinner.init() }
 addEventListener("load", function() {
   localStorage.spinner = localStorage.spinner || 1;
-  el.style.backgroundImage = 'url(img/' + localStorage.spinner + '.png)';
+  el.src = 'img/' + localStorage.spinner + '.png';
   var eles = document.querySelectorAll('header div');
   for (i = 0; i < eles.length; i++) {
     eles[i].style.backgroundImage = 'url(img/' + (i + 1) + '.png)';
     eles[i].id = i + 1;
     eles[i].ontouchend = function(e) {
       localStorage.spinner = e.target.id;
-      el.style.backgroundImage = 'url(img/' + localStorage.spinner + '.png)'
+      el.src = 'img/' + localStorage.spinner + '.png'
     };
     eles[i].onmouseup = eles[i].ontouchend;
   }
