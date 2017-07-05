@@ -83,6 +83,6 @@ addEventListener("load", function() {
 }, true);
 var x = 0;
 setInterval(function() {
-  x += 1;
+  x += 3;
   document.body.style.backgroundPosition = '0 ' + x + 'px';
-}, 10);
+}, 100);
