@@ -1,4 +1,4 @@
-body { margin:0;background:url(img/bg.jpg);overflow:hidden;-webkit-user-select:none;user-select:none}
+body { margin:0;background:url(img/bg.jpg);overflow:hidden;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
 
 ul { background: no-repeat center/contain;position:absolute;transition:ease-out transform;margin:auto;left:0;right:0;height: 80%; width: 80vh;bottom:0;top:50px;
 }
@@ -11,6 +11,7 @@ footer {
     position: fixed;
     bottom: 5px; left:0;
 }
+::selection{background:transparent}
 footer a img {
     height: 25px;
 	margin-left: 5px;
