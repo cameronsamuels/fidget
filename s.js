@@ -65,17 +65,15 @@ var movement = 0, mousedown = 'false', el = a('img'), angle = 0, startAngle = 0,
   };
 function loaded() { spinner.init() }
 addEventListener("load", function() {
-  localStorage.spinner = localStorage.spinner || 1;
-  el.src = 'img/' + localStorage.spinner + '.png';
-  var eles = document.querySelectorAll('header div');
-  for (i = 0; i < eles.length; i++) {
-    eles[i].style.backgroundImage = 'url(img/' + (i + 1) + '.png)';
-    eles[i].id = i + 1;
-    eles[i].ontouchend = function(e) {
-      localStorage.spinner = e.target.id;
-      el.src = 'img/' + localStorage.spinner + '.png'
+  var h = a('header');
+  for (i = 1; i < 7; i++) {
+    var s = document.createElement('img');
+    s.src = "img/" + i +  ".png";
+    s.ontouchend = function(e) {
+      el.src = e.target.src;
     };
-    eles[i].onmouseup = eles[i].ontouchend;
+    s.onmouseup = s.ontouchend;
+    h.appendChild(s);
   }
   document.addEventListener('touchmove', function(e) { e.preventDefault() });
   if (navigator.standalone) document.querySelector('header').style.paddingTop = "15px";
