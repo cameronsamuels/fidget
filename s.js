@@ -1,5 +1,5 @@
 function a(e) { return document.querySelector(e) }
-var movement = 0, mousedown = false, el = a('img'), angle = 0, startAngle = 0, originX = 160, originY = 160,
+var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, originY, x = 0,
   spinner = {
     init: function() {
       originX = innerWidth / 2, originY = innerHeight / 2;
@@ -56,7 +56,6 @@ addEventListener("load", function() {
   if (navigator.standalone) document.querySelector('header').style.paddingTop = "15px";
   setTimeout(function(){spinner.init()}, 100)
 }, true);
-var x = 0;
 setInterval(function() {
   x += 3;
   document.body.style.backgroundPosition = '0 ' + x + 'px';
