@@ -4,14 +4,10 @@ var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, orig
     init: function() {
       originX = innerWidth / 2, originY = innerHeight / 2;
       el.style.transitionDuration = '0';
-      el.addEventListener('touchstart', this.rotateStart);
-      el.addEventListener('touchmove', this.rotateMove);
+      el.addEventListener('touchstart', this.rotateStart), el.addEventListener('touchmove', this.rotateMove),
       el.addEventListener('touchend', this.rotateStop);
-      if (!navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) {
-        document.addEventListener('mousedown', this.rotateStart);
-        document.addEventListener('mousemove', this.rotateMove);
-        document.addEventListener('mouseup', this.rotateStop);
-      }
+      if (!navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) document.onmousedown = this.rotateStart,
+        document.onmousemove = this.rotateMove, document.onmouseup = this.rotateStop;
     },
     rotateStart: function(e) {
       e.preventDefault();
