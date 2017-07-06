@@ -34,7 +34,7 @@ var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, orig
       movement = 0;
     };
 addEventListener("load", function() {
-  var h = a('header');
+  var h = a('div');
   for (i = 1; i < 7; i++) {
     var s = document.createElement('img');
     s.src = "img/" + i +  ".png";
