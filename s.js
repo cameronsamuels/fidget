@@ -45,7 +45,6 @@ addEventListener("load", function() {
     h.appendChild(s);
   }
   document.addEventListener('touchmove', function(e) { e.preventDefault() });
-  if (navigator.standalone) document.querySelector('header').style.paddingTop = "15px";
   setTimeout(init, 100)
 }, true);
 setInterval(function() {
