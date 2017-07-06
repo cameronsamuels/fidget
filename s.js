@@ -37,7 +37,7 @@ var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, orig
       //   el.style.transitionDuration = '16000ms';
       //   angle *= 5;
       // } else
-      if (new Date() - elapse > 100 && movement > 30) el.style.transitionDuration = Math.round(ratio * 30000) + 'ms',
+      if (new Date() - elapse > 50 && movement > 60) el.style.transitionDuration = Math.round(ratio * 30000) + 'ms',
       el.style.transform = 'rotate(' + angle + 'rad)';
       movement = 0;
     }
