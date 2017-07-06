@@ -12,7 +12,8 @@ var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, orig
     rotateStart: function(e) {
       e.preventDefault();
       elapse = new Date(), mousedown = true, movement = 0, originX = innerWidth / 2, originY = innerHeight / 2;
-      el.style.transitionDuration = '', el.style.transform = '';
+      el.style.transitionDuration = '';
+      // , el.style.transform = '';
       setTimeout(function(){movement=0},50);
       if (e.touches) var startX = e.touches[0].pageX - originX, startY = e.touches[0].pageY - originY;
       else var startX = e.clientX - originX, startY = e.clientY - originY;
@@ -26,7 +27,8 @@ var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, orig
       else var dx = e.clientX - originX, dy = e.clientY - originY;
       angle = Math.atan2(dy, dx) - startAngle;
       movement = parseFloat(movement) + 10;
-      el.style.transform = 'rotate(' + angle + 'rad)';
+      // if (new Date() - elapse > 50)
+        el.style.transform = 'rotate(' + angle + 'rad)'
     },
     rotateStop: function(e) {
       var ratio = movement/(new Date() - elapse);
@@ -35,7 +37,7 @@ var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, orig
       //   el.style.transitionDuration = '16000ms';
       //   angle *= 5;
       // } else
-      el.style.transitionDuration = Math.round(ratio * 30000) + 'ms';
+      if (new Date() - elapse > 200) el.style.transitionDuration = Math.round(ratio * 30000) + 'ms',
       el.style.transform = 'rotate(' + angle + 'rad)';
       movement = 0;
     }
