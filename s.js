@@ -29,7 +29,7 @@ var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, orig
     rotateStop = function(e) {
       var ratio = movement/(new Date() - elapse);
       mousedown = false, angle = ratio * 1000;
-      if (new Date() - elapse > 30 && movement > 30) el.style.transitionDuration = Math.round(ratio * 30000) + 'ms',
+      if (new Date() - elapse > 30 && movement > 20) el.style.transitionDuration = Math.round(ratio * 30000) + 'ms',
       el.style.transform = 'rotate(' + angle + 'rad)';
       movement = 0;
     };
@@ -51,4 +51,4 @@ setInterval(function() {
   x += 3;
   document.body.style.backgroundPosition = '0 ' + x + 'px';
 }, 100);
-setInterval(function(){movement=0},170), setInterval(function(){elapse=new Date()},1000);
+setInterval(function(){movement=0},175), setInterval(function(){elapse=new Date()},1000);
