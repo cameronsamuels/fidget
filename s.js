@@ -51,4 +51,4 @@ setInterval(function() {
   x += 3;
   document.body.style.backgroundPosition = '0 ' + x + 'px';
 }, 100);
-setInterval(function(){movement=0},175), setInterval(function(){elapse=new Date()},1000);
+setInterval(function(){movement=0},165), setInterval(function(){elapse=new Date()},1000);
