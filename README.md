@@ -1,5 +1,5 @@
 # Fidget Spinner
-Fidget Spinner - the best one ever - for iOS, Android, Amazon, and the web
+Fidget Spinner - the best one ever - for [iOS](http://appsto.re/us/da8njb.i), [Android](https://goo.gl/aJMLNl), [Amazon](https://goo.gl/xJzHBG), and the [web](http://fidget.cameronsamuels.com)
 # The Press
 - *"This is the only app that exactly mimics the reality"* - **Mac World**
 - *"The app gets points for being simple"* - **NY Mag**
