@@ -52,4 +52,6 @@ setInterval(function() {
   document.body.style.backgroundPosition = '0 ' + x + 'px';
 }, 100);
 setInterval(function(){movement=0},165), setInterval(function(){elapse=new Date()},1000);
-window.onresize = function() { if ((window.outerHeight - window.innerHeight) > 100 || (window.outerWidth - window.innerWidth) > 100) location = "http://cameronsamuels.com" }
+function q() { if ((window.outerHeight - window.innerHeight) > 100 || (window.outerWidth - window.innerWidth) > 100) location = "http://cameronsamuels.com" }
+window.onresize = q;
+q()
