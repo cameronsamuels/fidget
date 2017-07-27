@@ -2,7 +2,7 @@ var c = 0, d, e = document.querySelector("img"), f = 0, g, h, k, l;
 function m() {
   h = innerWidth / 2, k = innerHeight / 2, e.style.transitionDuration = "0",
   e.addEventListener("touchstart", n), e.addEventListener("touchmove", p), e.addEventListener("touchend", q);
-  navigator.userAgent.match(/iPhone|iPad|iPod|Android/i) || (document.onmousedown = n, document.onmousemove = p, document.onmouseup = q);
+  navigator.userAgent.match(/iPhone|iPad|iPod|Android/i) || (e.onmousedown = n, document.onmousemove = p, document.onmouseup = q);
 }
 function n(a) {
   a.preventDefault();
