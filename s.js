@@ -1,57 +1,48 @@
-function a(e) { return document.querySelector(e) }
-var movement = 0, mousedown, el = a('img'), angle = 0, startAngle, originX, originY, x = 0, elapse,
-    init = function() {
-      originX = innerWidth / 2, originY = innerHeight / 2;
-      el.style.transitionDuration = '0';
-      el.addEventListener('touchstart', rotateStart), el.addEventListener('touchmove', rotateMove),
-      el.addEventListener('touchend', rotateStop);
-      if (!navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) document.onmousedown = rotateStart,
-        document.onmousemove = rotateMove, document.onmouseup = rotateStop;
-    },
-    rotateStart = function(e) {
-      e.preventDefault();
-      elapse = new Date(), mousedown = true, movement = 0, originX = innerWidth / 2, originY = innerHeight / 2;
-      el.style.transitionDuration = '';
-      if (e.touches) var startX = e.touches[0].pageX - originX, startY = e.touches[0].pageY - originY;
-      else var startX = e.clientX - originX, startY = e.clientY - originY;
-      startAngle = Math.atan2(startY, startX) - angle;
-    },
-    rotateMove = function(e) {
-      e.preventDefault();
-      if (e.type == 'mousemove' && !mousedown) return;
-      originX = innerWidth / 2, originY = innerHeight / 2;
-      if (e.touches) var dx = e.touches[0].pageX - originX, dy = e.touches[0].pageY - originY;
-      else var dx = e.clientX - originX, dy = e.clientY - originY;
-      angle = Math.atan2(dy, dx) - startAngle;
-      movement = parseFloat(movement) + 10;
-        el.style.transform = 'rotate(' + angle + 'rad)'
-    },
-    rotateStop = function(e) {
-      var ratio = movement/(new Date() - elapse);
-      mousedown = false, angle = ratio * 1000;
-      if (new Date() - elapse > 30 && movement > 20) el.style.transitionDuration = Math.round(ratio * 30000) + 'ms',
-      el.style.transform = 'rotate(' + angle + 'rad)';
-      movement = 0;
-    };
-addEventListener("load", function() {
-  var h = a('div');
-  for (i = 1; i < 7; i++) {
-    var s = document.createElement('img');
-    s.src = "img/" + i +  ".png";
-    s.ontouchend = function(e) {
-      el.src = e.target.src;
-    };
-    s.onmouseup = s.ontouchend;
-    h.appendChild(s);
+var c = 0, d, e = document.querySelector("img"), f = 0, g, h, k, l;
+function m() {
+  h = innerWidth / 2, k = innerHeight / 2, e.style.transitionDuration = "0",
+  e.addEventListener("touchstart", n), e.addEventListener("touchmove", p), e.addEventListener("touchend", q);
+  navigator.userAgent.match(/iPhone|iPad|iPod|Android/i) || (document.onmousedown = n, document.onmousemove = p, document.onmouseup = q);
+}
+function n(a) {
+  a.preventDefault();
+  l = new Date, d = !0, c = 0, h = innerWidth / 2, k = innerHeight / 2,
+  e.style.transitionDuration = "";
+  if (a.touches) {
+    var b = a.touches[0].pageX - h;
+    a = a.touches[0].pageY - k;
+  } else b = a.clientX - h, a = a.clientY - k;
+  g = Math.atan2(a, b) - f;
+}
+function p(a) {
+  a.preventDefault();
+  if ("mousemove" != a.type || d) {
+    h = innerWidth / 2, k = innerHeight / 2;
+    if (a.touches) {
+      var b = a.touches[0].pageX - h;
+      a = a.touches[0].pageY - k;
+    } else b = a.clientX - h, a = a.clientY - k;
+    f = Math.atan2(a, b) - g, c = parseFloat(c) + 10,
+    e.style.transform = "rotate(" + f + "rad)";
   }
-  document.addEventListener('touchmove', function(e) { e.preventDefault() });
-  setTimeout(init, 100)
-}, true);
-setInterval(function() {
-  x += 3;
-  document.body.style.backgroundPosition = '0 ' + x + 'px';
-}, 100);
-setInterval(function(){movement=0},165), setInterval(function(){elapse=new Date()},1000);
-function q() { if ((window.outerHeight - window.innerHeight) > 100 || (window.outerWidth - window.innerWidth) > 100) location = "http://cameronsamuels.com" }
-window.onresize = q;
-q()
+}
+function q() {
+  var a = c / (new Date - l);
+  d = !1, f = 1000 * a;
+  30 < new Date - l && 20 < c && (e.style.transitionDuration = Math.round(30000 * a) + "ms",
+  e.style.transform = "rotate(" + f + "rad)");
+  c = 0;
+}
+addEventListener("load", function() {
+  var a = document.querySelector("div");
+  for (i = 1; 7 > i; i++) {
+    var b = document.createElement("img");
+    b.src = "img/" + i + ".png";
+    b.ontouchend = function(a) { e.src = a.target.src };
+    b.onmouseup = b.ontouchend, a.appendChild(b);
+  }
+  document.addEventListener("touchmove", function(a) { a.preventDefault() });
+  setTimeout(m, 100);
+}, !0);
+setInterval(function() { c = 0 }, 165);
+setInterval(function() { l = new Date }, 1000);
