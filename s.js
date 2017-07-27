@@ -44,5 +44,7 @@ addEventListener("load", function() {
   document.addEventListener("touchmove", function(a) { a.preventDefault() });
   setTimeout(m, 100);
 }, !0);
-setInterval(function() { c = 0 }, 165);
-setInterval(function() { l = new Date }, 1000);
+setInterval(function() { c = 0 }, 165),
+setInterval(function() { l = new Date }, 1000),
+document.oncontextmenu = function(e) { e.preventDefault() },
+document.ondragstart = function(e) { return false }
