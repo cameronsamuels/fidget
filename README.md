@@ -5,6 +5,7 @@ Fidget Spinner - the best one ever - for [iOS](http://appsto.re/us/da8njb.i), [A
 [![Get it on Android or Android Wear](http://svgur.com/i/2GC.svg)](https://goo.gl/aJMLNl)
 [![Get it on Amazon](http://svgur.com/i/2Yb.svg)](https://goo.gl/xJzHBG)
 [![Add it on Chrome](http://svgur.com/i/2YJ.svg)](https://goo.gl/4g232x)
+[![Play it on Facebook Gameroom](http://svgur.com/i/2Y7.svg)](https://goo.gl/CtX1aZ)
 [![Play it on itch.io](http://svgshare.com/i/2HM.svg)](https://goo.gl/7C9SAb)
 # The Press
 - *"This is the only app that exactly mimics the reality"* - **Mac World**
