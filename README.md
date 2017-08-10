@@ -1,5 +1,10 @@
 # Fidget Spinner
 Fidget Spinner - the best one ever - for [iOS](http://appsto.re/us/da8njb.i), [Android & Android Wear](https://goo.gl/aJMLNl), [Amazon](https://goo.gl/xJzHBG), [Chrome](https://goo.gl/4g232x), [Firefox](https://goo.gl/yzhXb9), [Facebook](https://goo.gl/CtX1aZ), [Itch.io](https://goo.gl/hzZaMa), [Kongregate](https://goo.gl/yJSt2M), and the [web](http://fidget.cameronsamuels.com)
+# Get Started
+[![Get it on iOS](http://svgur.com/i/2Gm.svg)](http://appsto.re/us/da8njb.i)
+[![Get it on Android or Android Wear](http://svgur.com/i/2GC.svg)](https://goo.gl/aJMLNl)
+[![Get it on Amazon](http://svgur.com/i/2Yb.svg)](https://goo.gl/xJzHBG)
+[![Play it on itch.io](http://svgshare.com/i/2HM.svg)](https://goo.gl/7C9SAb)
 # The Press
 - *"This is the only app that exactly mimics the reality"* - **Mac World**
 - *"The app gets points for being simple"* - **NY Mag**
