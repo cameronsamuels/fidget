@@ -8,6 +8,7 @@ Fidget Spinner - the best one ever - for [iOS](http://appsto.re/us/da8njb.i), [A
 [![Play it on Facebook Gameroom](http://svgur.com/i/2Y7.svg)](https://goo.gl/CtX1aZ)
 [![Play it on itch.io](http://svgshare.com/i/2HM.svg)](https://goo.gl/7C9SAb)
 # The Press
+- *"They said it themselves: the best one"* - **Aptoide**
 - *"This is the only app that exactly mimics the reality"* - **Mac World**
 - *"The app gets points for being simple"* - **NY Mag**
 - *"Essential for players who do not want to waste time"* - **BEST4PCSOFT**
