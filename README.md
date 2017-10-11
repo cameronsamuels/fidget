@@ -4,9 +4,9 @@ A fidget spinner app with over 800,000 downloads.
 [Web](https://fidget.cameronsamuels.com) - For the web
 <br>[App Store](http://appsto.re/us/da8njb.i) - For iPhone, iPad, iPod Touch, and iOS Today
 <br>[Google Play](https://goo.gl/aJMLNl) - For Android and Android Wear
-<br>[Amazon](https://goo.gl/xJzHBG) - For Kindle and FirePhone
-<br>[Chrome](https://goo.gl/4g232x) - For Chrome, and Chromium
-<br>[Firefox](https://goo.gl/yzhXb9) - For Firefox
+<br>[Amazon App Store](https://goo.gl/xJzHBG) - For Kindle and FirePhone
+<br>[Chrome Web Store](https://goo.gl/4g232x) - For Chrome, and Chromium
+<br>[Firefox Add-ons Store](https://goo.gl/yzhXb9) - For Firefox
 # The Press
 - *"They said it themselves: the best one"* - **Aptoide**
 - *"This is the only app that exactly mimics the reality"* - **Mac World**
