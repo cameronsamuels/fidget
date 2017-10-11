@@ -7,9 +7,6 @@ A fidget spinner app with over 800,000 downloads.
 <br>[Amazon](https://goo.gl/xJzHBG) - For Kindle and FirePhone
 <br>[Chrome](https://goo.gl/4g232x) - For Chrome, and Chromium
 <br>[Firefox](https://goo.gl/yzhXb9) - For Firefox
-<br>[Facebook](https://goo.gl/CtX1aZ) - For Facebook Gameroom and Facebook Games
-<br>[Itch.io](https://goo.gl/hzZaMa) - For online usage
-<br>[Kongregate](https://goo.gl/yJSt2M) - For online usage
 # The Press
 - *"They said it themselves: the best one"* - **Aptoide**
 - *"This is the only app that exactly mimics the reality"* - **Mac World**
@@ -23,7 +20,7 @@ Made by me, [Cameron Samuels](https://cameronsamuels.com), in April 2017, a mont
 - iOS today widget in the notifications, home, and lock screen
 - 6 different spinners to use
 - 100% free, with no ads, in-app purchases, limitations, or cost
-- Available on over 10 platforms
+- Cross-platform
 # Contributing
 If you have a bug report or an idea, please [open an issue](https://git.io/vdl2n).
 <br>You can fork this repo and submit a pull request if you want to tackle an issue or improve the app. Thanks for you help.
