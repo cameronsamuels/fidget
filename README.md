@@ -1,5 +1,5 @@
 # Fidget Spinner
-A fidget spinner app with over 800,000 downloads.
+A fidget spinner app with over 700,000 downloads.
 # Links
 [Web](https://fidget.cameronsamuels.com) - For the web
 <br>[App Store](http://appsto.re/us/da8njb.i) - For iPhone, iPad, iPod Touch, and iOS Today
@@ -19,14 +19,14 @@ Made by me, [Cameron Samuels](https://cameronsamuels.com), in April 2017, a mont
 # Features
 - iOS today widget in the notifications, home, and lock screen
 - 6 different spinners to use
-- 100% free, with no ads, in-app purchases, limitations, or cost
+- 100% free, with no ads, no in-app purchases, no limitations, and no cost
 - Cross-platform
 # Contributing
-If you have a bug report or an idea, please [open an issue](https://git.io/vdl2n).
+If you have a bug report or an idea, please [open an issue](https://git.io/vdl2n) on the GitHub repo.
 <br>You can fork this repo and submit a pull request if you want to tackle an issue or improve the app. Thanks for you help.
 # Legal
 ### License
-"Fidget Spinner - the best one ever" is released under the [Cameron Samuels license](LICENSE).
+This code is released under the [Cameron Samuels license](LICENSE).
 ### Privacy Policy
 The [privacy policy](policy.md) for this software is available to be read. This policy applies to all of the following:
 [fidget](https://git.io/vdlzR), [fidget.ios](https://git.io/vdlza), [fidget.android](https://git.io/vdlz6),
