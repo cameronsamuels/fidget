@@ -4,7 +4,7 @@ It contains no ads and is 100% free. You can spin 6 different spinners.
 The app is available as an iOS, Android, & FireOS app, as well as a Chrome & Firefox extension.
 It is also available online for any browser or platform.
 ## Links
-[Web](https://fidget.cameronsamuels.com) - For the web
+[Web](https://xel.company/fidget) - For the web
 <br>[App Store](http://appsto.re/us/da8njb.i) - For iPhone, iPad, iPod Touch, and iOS Today
 <br>[Google Play](https://goo.gl/aJMLNl) - For Android and Android Wear
 <br>[Amazon App Store](https://goo.gl/xJzHBG) - For Kindle and FirePhone
