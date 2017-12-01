@@ -20,6 +20,10 @@ It is also available online for any browser or platform.
 ## Contributing
 If you have a bug report or an idea, please [open an issue](https://git.io/vdl2n) on the GitHub repo.
 <br>You can fork this repo and submit a pull request if you want to tackle an issue or improve the app.
+# Team
+[Cameron Samuels](https://cameronsamuels.com) - Project manager, lead developer
+### Contributors
+[Nihal Menon](https://github.com/nihalmenon) - [Benz Le](https://github.com/nova281)
 ## Legal
 This code is released under the [Cameron Samuels license](LICENSE).
 The privacy policy for this software is available in [policy.md](policy.md).
