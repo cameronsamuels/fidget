@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E77EDD91EA98C7600B92D20 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E77EDD81EA98C7600B92D20 /* NotificationCenter.framework */; };
+		7E77EDDD1EA98C7600B92D20 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77EDDC1EA98C7600B92D20 /* TodayViewController.m */; };
+		7E77EDE01EA98C7600B92D20 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EDDE1EA98C7600B92D20 /* MainInterface.storyboard */; };
+		7E77EDE41EA98C7600B92D20 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7E77EDD61EA98C7600B92D20 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E77EDEE1EA98F2F00B92D20 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EDEB1EA98F2F00B92D20 /* bg.jpg */; };
+		7E77EDEF1EA98F2F00B92D20 /* ios-widget.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EDEC1EA98F2F00B92D20 /* ios-widget.html */; };
+		7E77EE6C1EAB034200B92D20 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE681EAB034200B92D20 /* 1.png */; };
+		7E77EE6D1EAB034200B92D20 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE691EAB034200B92D20 /* 2.png */; };
+		7E77EE6E1EAB034200B92D20 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE6A1EAB034200B92D20 /* 3.png */; };
+		7E77EE6F1EAB034200B92D20 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE6B1EAB034200B92D20 /* 4.png */; };
+		7E77EE721EABE80200B92D20 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE701EABE80200B92D20 /* 5.png */; };
+		7E77EE731EABE80200B92D20 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE711EABE80200B92D20 /* 6.png */; };
+		7E77EE7A1EABEA3100B92D20 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE741EABEA3100B92D20 /* 1.png */; };
+		7E77EE7B1EABEA3100B92D20 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE751EABEA3100B92D20 /* 2.png */; };
+		7E77EE7C1EABEA3100B92D20 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE761EABEA3100B92D20 /* 3.png */; };
+		7E77EE7D1EABEA3100B92D20 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE771EABEA3100B92D20 /* 4.png */; };
+		7E77EE7E1EABEA3100B92D20 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE781EABEA3100B92D20 /* 5.png */; };
+		7E77EE7F1EABEA3100B92D20 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE791EABEA3100B92D20 /* 6.png */; };
+		7EDFCD091F5CC2AB007FE711 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDFCD081F5CC2AB007FE711 /* Stickers.xcassets */; };
+		7EDFCD0D1F5CC2AB007FE711 /* stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EDFCD061F5CC2AB007FE711 /* stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7EDFCD141F5CCBD8007FE711 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7EDFCD131F5CCBD8007FE711 /* Settings.bundle */; };
+		7EE239231EA816D8004322B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE239221EA816D8004322B3 /* main.m */; };
+		7EE239261EA816D8004322B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE239251EA816D8004322B3 /* AppDelegate.m */; };
+		7EE239291EA816D8004322B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE239281EA816D8004322B3 /* ViewController.m */; };
+		7EE2392C1EA816D8004322B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE2392A1EA816D8004322B3 /* Main.storyboard */; };
+		7EE2392E1EA816D8004322B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE2392D1EA816D8004322B3 /* Assets.xcassets */; };
+		7EE239311EA816D8004322B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE2392F1EA816D8004322B3 /* LaunchScreen.storyboard */; };
+		7EE2393B1EA81954004322B3 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EE239381EA81954004322B3 /* bg.jpg */; };
+		7EE2393C1EA81954004322B3 /* ios.html in Resources */ = {isa = PBXBuildFile; fileRef = 7EE239391EA81954004322B3 /* ios.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E77EDE21EA98C7600B92D20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EE239161EA816D8004322B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E77EDD51EA98C7600B92D20;
+			remoteInfo = widget;
+		};
+		7EDFCD0B1F5CC2AB007FE711 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EE239161EA816D8004322B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDFCD051F5CC2AB007FE711;
+			remoteInfo = stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E77EDE81EA98C7600B92D20 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7EDFCD0D1F5CC2AB007FE711 /* stickers.appex in Embed App Extensions */,
+				7E77EDE41EA98C7600B92D20 /* widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7E77EDD61EA98C7600B92D20 /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E77EDD81EA98C7600B92D20 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		7E77EDDB1EA98C7600B92D20 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		7E77EDDC1EA98C7600B92D20 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		7E77EDDF1EA98C7600B92D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7E77EDE11EA98C7600B92D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E77EDEB1EA98F2F00B92D20 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		7E77EDEC1EA98F2F00B92D20 /* ios-widget.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-widget.html"; sourceTree = "<group>"; };
+		7E77EE681EAB034200B92D20 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		7E77EE691EAB034200B92D20 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		7E77EE6A1EAB034200B92D20 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		7E77EE6B1EAB034200B92D20 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		7E77EE701EABE80200B92D20 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		7E77EE711EABE80200B92D20 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		7E77EE741EABEA3100B92D20 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		7E77EE751EABEA3100B92D20 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		7E77EE761EABEA3100B92D20 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		7E77EE771EABEA3100B92D20 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		7E77EE781EABEA3100B92D20 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		7E77EE791EABEA3100B92D20 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		7E97DC001F5B9FC70024D3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EDFCD061F5CC2AB007FE711 /* stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDFCD081F5CC2AB007FE711 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		7EDFCD0A1F5CC2AB007FE711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EDFCD131F5CCBD8007FE711 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7EE2391E1EA816D8004322B3 /* Fidget Spinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fidget Spinner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE239221EA816D8004322B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EE239241EA816D8004322B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EE239251EA816D8004322B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EE239271EA816D8004322B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7EE239281EA816D8004322B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7EE2392B1EA816D8004322B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EE2392D1EA816D8004322B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EE239301EA816D8004322B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EE239381EA81954004322B3 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		7EE239391EA81954004322B3 /* ios.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ios.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E77EDD31EA98C7600B92D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E77EDD91EA98C7600B92D20 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EE2391B1EA816D8004322B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E77EDD71EA98C7600B92D20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E77EDD81EA98C7600B92D20 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E77EDDA1EA98C7600B92D20 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				7E97DC071F5BA6380024D3CE /* a */,
+				7E77EDDB1EA98C7600B92D20 /* TodayViewController.h */,
+				7E77EDDC1EA98C7600B92D20 /* TodayViewController.m */,
+				7E77EDDE1EA98C7600B92D20 /* MainInterface.storyboard */,
+				7E77EDE11EA98C7600B92D20 /* Info.plist */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		7E97DBFF1F5B9EF20024D3CE /* a */ = {
+			isa = PBXGroup;
+			children = (
+				7EE239391EA81954004322B3 /* ios.html */,
+				7E77EE681EAB034200B92D20 /* 1.png */,
+				7E77EE691EAB034200B92D20 /* 2.png */,
+				7E77EE6A1EAB034200B92D20 /* 3.png */,
+				7E77EE6B1EAB034200B92D20 /* 4.png */,
+				7E77EE701EABE80200B92D20 /* 5.png */,
+				7E77EE711EABE80200B92D20 /* 6.png */,
+				7EE239381EA81954004322B3 /* bg.jpg */,
+			);
+			path = a;
+			sourceTree = "<group>";
+		};
+		7E97DC071F5BA6380024D3CE /* a */ = {
+			isa = PBXGroup;
+			children = (
+				7E77EDEC1EA98F2F00B92D20 /* ios-widget.html */,
+				7E77EE741EABEA3100B92D20 /* 1.png */,
+				7E77EE751EABEA3100B92D20 /* 2.png */,
+				7E77EE761EABEA3100B92D20 /* 3.png */,
+				7E77EE771EABEA3100B92D20 /* 4.png */,
+				7E77EE781EABEA3100B92D20 /* 5.png */,
+				7E77EE791EABEA3100B92D20 /* 6.png */,
+				7E77EDEB1EA98F2F00B92D20 /* bg.jpg */,
+			);
+			path = a;
+			sourceTree = "<group>";
+		};
+		7EDFCD071F5CC2AB007FE711 /* stickers */ = {
+			isa = PBXGroup;
+			children = (
+				7EDFCD081F5CC2AB007FE711 /* Stickers.xcassets */,
+				7EDFCD0A1F5CC2AB007FE711 /* Info.plist */,
+			);
+			path = stickers;
+			sourceTree = "<group>";
+		};
+		7EE239151EA816D8004322B3 = {
+			isa = PBXGroup;
+			children = (
+				7EDFCD131F5CCBD8007FE711 /* Settings.bundle */,
+				7EE239201EA816D8004322B3 /* app */,
+				7E77EDDA1EA98C7600B92D20 /* widget */,
+				7EDFCD071F5CC2AB007FE711 /* stickers */,
+				7E77EDD71EA98C7600B92D20 /* Frameworks */,
+				7EE2391F1EA816D8004322B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EE2391F1EA816D8004322B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EE2391E1EA816D8004322B3 /* Fidget Spinner.app */,
+				7E77EDD61EA98C7600B92D20 /* widget.appex */,
+				7EDFCD061F5CC2AB007FE711 /* stickers.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EE239201EA816D8004322B3 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				7E97DBFF1F5B9EF20024D3CE /* a */,
+				7EE239241EA816D8004322B3 /* AppDelegate.h */,
+				7EE239251EA816D8004322B3 /* AppDelegate.m */,
+				7EE239271EA816D8004322B3 /* ViewController.h */,
+				7EE239281EA816D8004322B3 /* ViewController.m */,
+				7EE2392A1EA816D8004322B3 /* Main.storyboard */,
+				7EE2392F1EA816D8004322B3 /* LaunchScreen.storyboard */,
+				7E97DC001F5B9FC70024D3CE /* Info.plist */,
+				7EE2392D1EA816D8004322B3 /* Assets.xcassets */,
+				7EE239211EA816D8004322B3 /* Supporting Files */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		7EE239211EA816D8004322B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EE239221EA816D8004322B3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E77EDD51EA98C7600B92D20 /* widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E77EDE51EA98C7600B92D20 /* Build configuration list for PBXNativeTarget "widget" */;
+			buildPhases = (
+				7E77EDD21EA98C7600B92D20 /* Sources */,
+				7E77EDD31EA98C7600B92D20 /* Frameworks */,
+				7E77EDD41EA98C7600B92D20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widget;
+			productName = widget;
+			productReference = 7E77EDD61EA98C7600B92D20 /* widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7EDFCD051F5CC2AB007FE711 /* stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDFCD0E1F5CC2AB007FE711 /* Build configuration list for PBXNativeTarget "stickers" */;
+			buildPhases = (
+				7EDFCD041F5CC2AB007FE711 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stickers;
+			productName = stickers;
+			productReference = 7EDFCD061F5CC2AB007FE711 /* stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+		7EE2391D1EA816D8004322B3 /* Fidget Spinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EE239351EA816D8004322B3 /* Build configuration list for PBXNativeTarget "Fidget Spinner" */;
+			buildPhases = (
+				7EE2391A1EA816D8004322B3 /* Sources */,
+				7EE2391B1EA816D8004322B3 /* Frameworks */,
+				7EE2391C1EA816D8004322B3 /* Resources */,
+				7EDFCD161F5CDAA7007FE711 /* ShellScript */,
+				7E77EDE81EA98C7600B92D20 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E77EDE31EA98C7600B92D20 /* PBXTargetDependency */,
+				7EDFCD0C1F5CC2AB007FE711 /* PBXTargetDependency */,
+			);
+			name = "Fidget Spinner";
+			productName = "Fidget Spinner";
+			productReference = 7EE2391E1EA816D8004322B3 /* Fidget Spinner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EE239161EA816D8004322B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Cameron Samuels";
+				TargetAttributes = {
+					7E77EDD51EA98C7600B92D20 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z6G969245X;
+						ProvisioningStyle = Automatic;
+					};
+					7EDFCD051F5CC2AB007FE711 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = Z6G969245X;
+					};
+					7EE2391D1EA816D8004322B3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z6G969245X;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7EE239191EA816D8004322B3 /* Build configuration list for PBXProject "Fidget Spinner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EE239151EA816D8004322B3;
+			productRefGroup = 7EE2391F1EA816D8004322B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EE2391D1EA816D8004322B3 /* Fidget Spinner */,
+				7E77EDD51EA98C7600B92D20 /* widget */,
+				7EDFCD051F5CC2AB007FE711 /* stickers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E77EDD41EA98C7600B92D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E77EDEF1EA98F2F00B92D20 /* ios-widget.html in Resources */,
+				7E77EE7A1EABEA3100B92D20 /* 1.png in Resources */,
+				7E77EE7B1EABEA3100B92D20 /* 2.png in Resources */,
+				7E77EE7C1EABEA3100B92D20 /* 3.png in Resources */,
+				7E77EE7D1EABEA3100B92D20 /* 4.png in Resources */,
+				7E77EE7E1EABEA3100B92D20 /* 5.png in Resources */,
+				7E77EE7F1EABEA3100B92D20 /* 6.png in Resources */,
+				7E77EDEE1EA98F2F00B92D20 /* bg.jpg in Resources */,
+				7E77EDE01EA98C7600B92D20 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDFCD041F5CC2AB007FE711 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDFCD091F5CC2AB007FE711 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EE2391C1EA816D8004322B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE2393C1EA81954004322B3 /* ios.html in Resources */,
+				7E77EE6C1EAB034200B92D20 /* 1.png in Resources */,
+				7E77EE6D1EAB034200B92D20 /* 2.png in Resources */,
+				7E77EE6E1EAB034200B92D20 /* 3.png in Resources */,
+				7EDFCD141F5CCBD8007FE711 /* Settings.bundle in Resources */,
+				7E77EE6F1EAB034200B92D20 /* 4.png in Resources */,
+				7E77EE721EABE80200B92D20 /* 5.png in Resources */,
+				7E77EE731EABE80200B92D20 /* 6.png in Resources */,
+				7EE2393B1EA81954004322B3 /* bg.jpg in Resources */,
+				7EE2392C1EA816D8004322B3 /* Main.storyboard in Resources */,
+				7EE239311EA816D8004322B3 /* LaunchScreen.storyboard in Resources */,
+				7EE2392E1EA816D8004322B3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EDFCD161F5CDAA7007FE711 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\nbuildVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_PATH}\" )\ntext=\"v2.0 ($buildVersion) 09/2017\"\n/usr/libexec/PlistBuddy -c \"Set PreferenceSpecifiers:2:DefaultValue $text\" \"${WRAPPER_NAME}/Settings.bundle/Root.plist\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E77EDD21EA98C7600B92D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E77EDDD1EA98C7600B92D20 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EE2391A1EA816D8004322B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE239291EA816D8004322B3 /* ViewController.m in Sources */,
+				7EE239261EA816D8004322B3 /* AppDelegate.m in Sources */,
+				7EE239231EA816D8004322B3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E77EDE31EA98C7600B92D20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E77EDD51EA98C7600B92D20 /* widget */;
+			targetProxy = 7E77EDE21EA98C7600B92D20 /* PBXContainerItemProxy */;
+		};
+		7EDFCD0C1F5CC2AB007FE711 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EDFCD051F5CC2AB007FE711 /* stickers */;
+			targetProxy = 7EDFCD0B1F5CC2AB007FE711 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E77EDDE1EA98C7600B92D20 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E77EDDF1EA98C7600B92D20 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		7EE2392A1EA816D8004322B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EE2392B1EA816D8004322B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EE2392F1EA816D8004322B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EE239301EA816D8004322B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E77EDE61EA98C7600B92D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Z6G969245X;
+				INFOPLIST_FILE = widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameronsamuels.fidgetspinner.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7E77EDE71EA98C7600B92D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Z6G969245X;
+				INFOPLIST_FILE = widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameronsamuels.fidgetspinner.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7EDFCD0F1F5CC2AB007FE711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6G969245X;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameronsamuels.fidgetspinner.stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EDFCD101F5CC2AB007FE711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6G969245X;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameronsamuels.fidgetspinner.stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EE239331EA816D8004322B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EE239341EA816D8004322B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EE239361EA816D8004322B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6G969245X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameronsamuels.fidgetspinner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7EE239371EA816D8004322B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6G969245X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cameronsamuels.fidgetspinner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E77EDE51EA98C7600B92D20 /* Build configuration list for PBXNativeTarget "widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E77EDE61EA98C7600B92D20 /* Debug */,
+				7E77EDE71EA98C7600B92D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDFCD0E1F5CC2AB007FE711 /* Build configuration list for PBXNativeTarget "stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDFCD0F1F5CC2AB007FE711 /* Debug */,
+				7EDFCD101F5CC2AB007FE711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EE239191EA816D8004322B3 /* Build configuration list for PBXProject "Fidget Spinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EE239331EA816D8004322B3 /* Debug */,
+				7EE239341EA816D8004322B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EE239351EA816D8004322B3 /* Build configuration list for PBXNativeTarget "Fidget Spinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EE239361EA816D8004322B3 /* Debug */,
+				7EE239371EA816D8004322B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EE239161EA816D8004322B3 /* Project object */;
+}

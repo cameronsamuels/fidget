@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Use online beta release</string>
+			<key>Key</key>
+			<string>beta</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>About</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Key</key>
+			<string>release</string>
+			<key>Title</key>
+			<string>Release</string>
+			<key>DefaultValue</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Credits</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Key</key>
+			<string>developer</string>
+			<key>Title</key>
+			<string>Developed by</string>
+			<key>DefaultValue</key>
+			<string>Cameron Samuels</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Key</key>
+			<string>ideaperson</string>
+			<key>Title</key>
+			<string>Idea by</string>
+			<key>DefaultValue</key>
+			<string>Jacob Gelder</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Legal</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>DefaultValue</key>
+			<string>https://git.io/v5EWh</string>
+			<key>Title</key>
+			<string>Open source</string>
+			<key>Key</key>
+			<string>opensource</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>DefaultValue</key>
+			<string>https://git.io/v5ElJ</string>
+			<key>Title</key>
+			<string>Privacy policy</string>
+			<key>Key</key>
+			<string>privacypolicy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
