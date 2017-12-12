@@ -1,0 +1,26 @@
+div, div img { height: 50px }
+body {
+    margin: 0;
+    background: url(img/bg.jpg);
+    overflow: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-user-select: none;
+    width: 320px;
+    height: 400px;
+}
+body>img {
+    position: absolute;
+    transition: ease-out transform;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 95%;
+    bottom: 0;
+    top: 50px
+}
+div {
+    background: #987;
+    text-align: center
+}
+div img { margin-top: 3px }
