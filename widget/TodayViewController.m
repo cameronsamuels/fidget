@@ -6,8 +6,7 @@
 @end
 @implementation TodayViewController
 - (void)viewDidLoad {
-    NSString *indexPath = [[NSBundle mainBundle] pathForResource:@"ios-widget" ofType:@"html"];
-    [page loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:indexPath]]];
+    [page loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"ios-widget" ofType:@"html"]]]];
     page.scrollView.bounces = NO;
     [super viewDidLoad];
     self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;

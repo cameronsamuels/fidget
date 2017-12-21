@@ -27,7 +27,6 @@
 		7E77EE7F1EABEA3100B92D20 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77EE791EABEA3100B92D20 /* 6.png */; };
 		7EDFCD091F5CC2AB007FE711 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDFCD081F5CC2AB007FE711 /* Stickers.xcassets */; };
 		7EDFCD0D1F5CC2AB007FE711 /* stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EDFCD061F5CC2AB007FE711 /* stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7EDFCD141F5CCBD8007FE711 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7EDFCD131F5CCBD8007FE711 /* Settings.bundle */; };
 		7EE239231EA816D8004322B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE239221EA816D8004322B3 /* main.m */; };
 		7EE239261EA816D8004322B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE239251EA816D8004322B3 /* AppDelegate.m */; };
 		7EE239291EA816D8004322B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE239281EA816D8004322B3 /* ViewController.m */; };
@@ -95,7 +94,6 @@
 		7EDFCD061F5CC2AB007FE711 /* stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDFCD081F5CC2AB007FE711 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		7EDFCD0A1F5CC2AB007FE711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EDFCD131F5CCBD8007FE711 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7EE2391E1EA816D8004322B3 /* Fidget Spinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fidget Spinner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE239221EA816D8004322B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EE239241EA816D8004322B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 		7EE239151EA816D8004322B3 = {
 			isa = PBXGroup;
 			children = (
-				7EDFCD131F5CCBD8007FE711 /* Settings.bundle */,
 				7EE239201EA816D8004322B3 /* app */,
 				7E77EDDA1EA98C7600B92D20 /* widget */,
 				7EDFCD071F5CC2AB007FE711 /* stickers */,
@@ -276,7 +273,6 @@
 				7EE2391A1EA816D8004322B3 /* Sources */,
 				7EE2391B1EA816D8004322B3 /* Frameworks */,
 				7EE2391C1EA816D8004322B3 /* Resources */,
-				7EDFCD161F5CDAA7007FE711 /* ShellScript */,
 				7E77EDE81EA98C7600B92D20 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -368,7 +364,6 @@
 				7E77EE6C1EAB034200B92D20 /* 1.png in Resources */,
 				7E77EE6D1EAB034200B92D20 /* 2.png in Resources */,
 				7E77EE6E1EAB034200B92D20 /* 3.png in Resources */,
-				7EDFCD141F5CCBD8007FE711 /* Settings.bundle in Resources */,
 				7E77EE6F1EAB034200B92D20 /* 4.png in Resources */,
 				7E77EE721EABE80200B92D20 /* 5.png in Resources */,
 				7E77EE731EABE80200B92D20 /* 6.png in Resources */,
@@ -380,22 +375,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7EDFCD161F5CDAA7007FE711 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\nbuildVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_PATH}\" )\ntext=\"v2.0 ($buildVersion) 09/2017\"\n/usr/libexec/PlistBuddy -c \"Set PreferenceSpecifiers:2:DefaultValue $text\" \"${WRAPPER_NAME}/Settings.bundle/Root.plist\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E77EDD21EA98C7600B92D20 /* Sources */ = {
