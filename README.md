@@ -32,4 +32,3 @@ If you have a bug report or an idea, please [open an issue](https://git.io/vdl2n
 
 ## Legal
 This code is released under the [Cameron Samuels license](LICENSE).
-The privacy policy for this software is available in [policy.md](policy.md).
