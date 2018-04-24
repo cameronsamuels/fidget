@@ -3,7 +3,7 @@ A cross-platform fidget spinner app with over 700,000 downloads worldwide.
 It contains no ads and is 100% free. You can spin 6 different spinners.
 
 ## Links
-[Web](https://xel.company/fidget) - For the web
+[Web](https://git.io/vpZxN) - For the web
 <br>[App Store](http://appsto.re/us/da8njb.i) - For iOS
 <br>[Google Play](https://goo.gl/aJMLNl) - For Android and Android Wear
 <br>[Amazon App Store](https://goo.gl/xJzHBG) - For Kindle
