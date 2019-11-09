@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: url(images/bg.jpg);
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body>div, body>div img {
+  height: 50px;
+}
+
+body>div {
+  background: #987;
+  text-align: center;
+}
+  
+body>div img{
+  margin-top: 3px;
+}
+
+body>img {
+  position: absolute;
+  transition: ease-out transform;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 80vh;
+  bottom: 0;
+  top: 50px;
+}
+
+@media screen and (orientation:portrait) {
+  body>img {
+    width: 95%;
+  }
+}
